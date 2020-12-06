@@ -1,0 +1,17 @@
+.button_home{
+    position: absolute;
+width: 113px;
+height: 43px;
+left: 237px;
+top: 23px;
+
+background: #FFFFFF;
+border-radius: 21.5px;
+    
+}
+.button_home:hover {
+    background-color:black;
+    color: white;
+    border-radius: 21.5px;
+
+}

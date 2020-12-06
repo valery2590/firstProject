@@ -1,4 +1,13 @@
-.App {
+
+.app_body{
+  background-color: lightblue;
+}
+.app_header{
+  display: flex; 
+}
+
+
+/*.App {
   text-align: center;
 }
 
@@ -24,9 +33,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +42,4 @@
     transform: rotate(360deg);
   }
 }
+*/
