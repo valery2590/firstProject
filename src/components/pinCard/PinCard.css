@@ -1,0 +1,23 @@
+.pinCard__container {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  
+  .pinCard__image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .pinCard_info__container {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+  }
+  
+  .pinCard_info_board__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
