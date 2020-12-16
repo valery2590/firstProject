@@ -50,12 +50,12 @@ const BoardForm = () => {
             <br></br>
             <button onclick="handleSubmit" type="submit" className="button_form"> Create</button>
 
-            
-
+                        
                         <form className="form_container_boardPage">
                         <span className="form_title">Create Pin</span>
                         <br></br>  
                         <br></br> 
+                        <div className="form_input_container">
                         <label>
                             Title
                             <br></br>
@@ -73,6 +73,8 @@ const BoardForm = () => {
                         </label>
                         <br></br>
                         <br></br>
+                        </div>
+                        <div className="form_input_container2">
                         <label>
                             Describe your pin
                             <br></br>
@@ -87,6 +89,7 @@ const BoardForm = () => {
                             <br></br>
                             <input  type="text" name="board" placeholder="Select to which board you want to add the pin" onChange={(e)=> setTitle(e.target.value)}/>
                         </label>
+                        </div>
                         <br></br>
                         <button onclick="handleSubmit" type="submit" className="button_form"> Create</button>
         </form>
