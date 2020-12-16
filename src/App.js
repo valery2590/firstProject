@@ -18,7 +18,7 @@ function App() {
   const [user, setUser] = useState ({});
 
   useEffect(() => {
-    fetch = (`http://localhost:5000/api/users/1`)
+    fetch = (`http://localhost:5000/api/users`)
     .then ((response) => response.json())
     .then ((json) => setUser(json));
 
@@ -46,10 +46,15 @@ function App() {
             fullName="John Doe"/>
         </div>
         <br></br>
+        <div className="boardList_container">
+          <BoardList/>
+       
+
         <div className="boards_container">
           <BoardCard />
         <div className="form_body">
           <BoardForm />
+          </div>
         </div>
         </div>
     </div>
