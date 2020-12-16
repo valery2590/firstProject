@@ -31,27 +31,69 @@ const BoardForm = () => {
     return (
         <form className="form_container">
             <span className="form_title">Create Board</span>
-            <br></br>   
+            <br></br>  
+            <br></br> 
             <label>
                 Name
+                <br></br>
                 <br></br>
             <input  type="text" name="name"  placeholder="Places to go or even 'my fav recipes'" className="input_name_container" onChange={(e)=> setTitle(e.target.value)}/>
             </label>
             <br></br>
+            <br></br>
             <label>
                 Description
+                <br></br>
                 <br></br>
             <input  type="text" name="description" placeholder="Describe this board" onChange={(e)=> setTitle(e.target.value)}/>
             </label>
             <br></br>
-            <select onChange={(e) => setSelect(e.target.value)}>
-                <option value="id">id</option>
-                <option value="jaja">jaja</option>
-                <option value="quetal">quetal</option>
-            </select>
-            <br></br>
-            <button onclick="handleSubmit" type="submit"> Enviar</button>
+            <button onclick="handleSubmit" type="submit" className="button_form"> Create</button>
+
+            
+
+                        <form className="form_container_boardPage">
+                        <span className="form_title">Create Pin</span>
+                        <br></br>  
+                        <br></br> 
+                        <label>
+                            Title
+                            <br></br>
+                            <br></br>
+                        <input  type="text" name="title"  placeholder="Add a title" className="input_title_container" onChange={(e)=> setTitle(e.target.value)}/>
+                        </label>
+                        <br></br>
+                        <br></br>
+
+                        <label>
+                            URL Link
+                            <br></br>
+                            <br></br>
+                        <input  type="text" name="url_link" placeholder="Add a URL to your pin" onChange={(e)=> setTitle(e.target.value)}/>
+                        </label>
+                        <br></br>
+                        <br></br>
+                        <label>
+                            Describe your pin
+                            <br></br>
+                            <br></br>
+                        <input  type="text" name="describe_pin" placeholder="Describe what your pin is about" onChange={(e)=> setTitle(e.target.value)}/>
+                        </label>
+                        <br></br>
+                        <br></br>
+                        <label>
+                            Board
+                            <br></br>
+                            <br></br>
+                            <input  type="text" name="board" placeholder="Select to which board you want to add the pin" onChange={(e)=> setTitle(e.target.value)}/>
+                        </label>
+                        <br></br>
+                        <button onclick="handleSubmit" type="submit" className="button_form"> Create</button>
         </form>
+
+        </form>
+
+        
 
     )
 }
