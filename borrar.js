@@ -1,1 +1,0 @@
-prompt("put your name on it");

@@ -1,7 +1,9 @@
 .header__container{
-    height:88px;
-    display: flex;
-    align-items: center;
-    padding: 0 25px;
-    
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 25px;
+    top: 20px;
+
+
 }

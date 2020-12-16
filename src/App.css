@@ -4,7 +4,26 @@
 }
 .app_header{
   display: flex; 
+  justify-content: space-around;
+  
 }
+.app_userCard{
+   margin: auto;
+   width: 150px;
+   height: 150px;
+}
+.boards_container{
+  margin:30px;
+}
+
+
+.form_body{
+  width: 300px;
+  margin:auto;
+
+}
+
+
 
 
 /*.App {

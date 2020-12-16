@@ -1,0 +1,52 @@
+.userCard__container{
+    width: 120px;
+    height: 218px;
+    left: 660px;
+    top: 144px; 
+}
+.userCard__image{
+    width: 120px;
+    height: 120px;
+    border-radius: 150px;  
+}
+.userCard_info__container{
+    width: 150px;
+    height: 28px;
+    left: 9px;
+    top: 134px;
+    text-align: center;
+}
+.userCard_info__userFullname__text{
+    width: 102px;
+    height: 28px;
+    left: 9px;
+    top: 134px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.userCard_info__username__text{
+    width: 70px;
+    height: 16px;
+    left: 25px;
+    top: 167px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+.userCard_info__userFollowing__text{
+    width: 78px;
+    height: 16px;
+    left: 22px;
+    top: 202px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
