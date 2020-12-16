@@ -1,6 +1,6 @@
 import "../App.css";
 import BoardList from "../components/boardList/boardList";
-import PinsList from "../components/pinList/pinList";
+import PinsList from "../components/pinList/PinsList";
 import UserCard from "../components/userCard/userCard";
 
 function HomePage({user}) {
