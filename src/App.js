@@ -4,7 +4,7 @@ import UserCard from "./components/userCard/userCard";
 import Button from "./components/header/button/button";
 import UserMenu from "./components/header/userMenu/userMenu";
 import { useEffect, useState } from "react";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import BoardList from "./components/boardList/boardList";
 import BoardCard from "./components/BoardCard/BoardCard";
 import BoardForm from "./components/BoardForm/BoardForm";
@@ -12,18 +12,17 @@ import BoardForm from "./components/BoardForm/BoardForm";
 //import UserProfilePage from './pages/userProfilePage';
 //import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-function App() {
-  //const history = useHistory();
-  /*
+const App =()=> {
+  
   const [user, setUser] = useState ({});
 
   useEffect(() => {
-    fetch = (`http://localhost:5000/api/users`)
-    .then ((response) => response.json())
+    fetch (`http://localhost:3000/api/users`)
+    .then (res => res.json())
     .then ((json) => setUser(json));
 
   }, [] );
-  */
+  
   return (
     <div className="app_body">
       <div className="app_header">
@@ -51,7 +50,7 @@ function App() {
        
 
         <div className="boards_container">
-          <BoardCard />
+          <BoardCard /> 
         <div className="form_body">
           <BoardForm />
           </div>

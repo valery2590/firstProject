@@ -18,8 +18,7 @@ const Header = ({ user }) => {
                 <img
                  src={user} // src={user.avatar}
                     className="header_userInfo__image"
-                    alt="User avatar"
-                />
+                    alt="User avatar"/>
             </div>
         </div>
     );
