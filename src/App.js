@@ -6,12 +6,12 @@ import UserMenu from "./components/header/userMenu/userMenu";
 import { useEffect, useState } from "react";
 import { Router, useHistory } from "react-router";
 import BoardList from "./components/boardList/boardList";
-import BoardCard from "./components/BoardCard/BoardCard";
-import BoardForm from "./components/BoardForm/BoardForm";
+import BoardCard from "./components/BoardCard/BoardCard";s
 import HomePage from './pages/homePage';
 import { UserProfilePage } from "./pages/useProfilePage";
 //import UserProfilePage from "./pages/userProfilePage";
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import BoardForm from "./components/BoardForm/Boardform";
 
 const App =()=> {
   const [user, setUser] = useState({});
@@ -28,6 +28,9 @@ const App =()=> {
         <Switch>
           <Route path="/boards">
           <BoardPage />
+          </Route>
+          <Route path="/boardform">
+            <BoardForm/>
           </Route>
           <Route path="user">
             <UserProfilePage user={user} />
