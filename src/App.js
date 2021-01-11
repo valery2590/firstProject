@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 //import BoardList from "./components/boardList/boardList";
 //import BoardCard from "./components/BoardCard/BoardCard";s
 import HomePage from './pages/homePage';
-import { UserProfilePage } from "./pages/useProfilePage";
-//import UserProfilePage from "./pages/userProfilePage";
+import {  UserProfilePage} from "./pages/useProfilePage";
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import BoardForm from "./components/BoardForm/Boardform";
 import PinForm from "./components/PinForm/PinForm";
+import BoardPage  from "./pages/boardPage";
 
 const App =()=> {
   const [user, setUser] = useState({});
@@ -33,7 +33,7 @@ const App =()=> {
           <Route path="/pinform">
             <PinForm/>
           </Route>
-          <Route path="user">
+          <Route path="/user">
             <UserProfilePage user={user} />
           </Route>
           <Route path="/">
@@ -48,9 +48,7 @@ const App =()=> {
   
 }
   
-  function BoardPage() {
-  return <h2>Home</h2>
-}
+ 
 
 
 export default App;
