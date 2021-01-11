@@ -2,7 +2,9 @@ import './button.css';
 
 const Button = () => {
     return (
-        <button className="button_home"><a>Home</a></button>
+        <div className="button_home">
+            <div className="button_container">Home</div>
+            </div>
     )
 };
 

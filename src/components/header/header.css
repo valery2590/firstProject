@@ -1,9 +1,20 @@
-.header__container{
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    left: 25px;
-    top: 20px;
+.header__container {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
+  padding: 0 22px;
+}
+.header__logo{
+  display: flex;
+}
+.button__container{
+  margin-left: 82px;
+}
 
-
+.header_userInfo__image {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
 }
