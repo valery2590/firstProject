@@ -25,53 +25,56 @@ const PinForm = () => {
   };
 
   return (
-  
-  <form className="form_container_boardPage">
-    <p className="form_title">Create Pin</p>
-    <div className="form_input_container">
-      <label className="form_label">
-        Title </label>
-        <input
-          type="text"
+  <div>
+    <p className="form__title">Create Pin</p>
+  <form className="form__container">
+    <div className="form_inputs">
+      <label className="input_label">Title</label>
+      <input type="text"
           name="title"
           placeholder="Add a title"
           className="input_title_container"
           onChange={(e) => setTitle(e.target.value)}
-        />
-      <label className="form_label">
-        URL Link </label>
-        <input
-          type="text"
-          name="url_link"
-          placeholder="Add a URL to your pin"
-          onChange={(e) => setTitle(e.target.value)}
-        />
+       />
     </div>
-    <div className="form_input_container">
-      <label className="form_label">
-        Describe your pin</label>
-        <input
-          type="text"
-          name="describe_pin"
-          placeholder="Describe what your pin is about"
-          onChange={(e) => setTitle(e.target.value)}
-        />
-      <label className="form_label">
-        Board </label>
-        <input
-          type="text"
-          name="board"
-          placeholder="Select to which board you want to add the pin"
-          onChange={(e) => setTitle(e.target.value)}
-        />
-     
+    <div className="form_inputs"> 
+    <label className="input_label">URL Link</label>
+      <input type="text"
+         type="text"
+         name="url_link"
+         placeholder="Add a URL to your pin"
+         className="input_title_container"
+         onChange={(e) => setTitle(e.target.value)}
+       />
     </div>
+    <div className="form_inputs">
+    <label className="input_label">Describe your pin</label>
+      <input type="text"
+         type="text"
+         name="describe_pin"
+         placeholder="Describe what your pin is about"
+         className="input_title_container"
+         onChange={(e) => setTitle(e.target.value)}
+       />
+    </div>
+    <div className="form_inputs">
+    <label className="input_label">Board</label>
+      <input type="text"
+           type="text"
+           name="board"
+           placeholder="Select to which board you want to add the pin"
+           className="input_title_container"
+           onChange={(e) => setTitle(e.target.value)}
+       />
+    </div>
+    <div className="form_button_container">
     <button onclick="handleSubmit" type="submit" className="button_form">
       {" "}
       Create
     </button>
-</form>
-);}
-
-
+    </div>
+    </form>
+  </div>
+  )};
+ 
 export default PinForm;

@@ -31,6 +31,9 @@ input {
   border-radius: 15px;
   margin-bottom: 44px;
 }
+::-webkit-input-placeholder {
+  text-align: center;
+}
 .form_items {
   display: flex;
   flex-direction: column;
