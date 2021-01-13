@@ -18,6 +18,14 @@
     margin: auto;
     width: 80%;
 }
+.button_signIn{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
 .signUp_container{
     margin: auto;
     width: 80%;
@@ -34,4 +42,12 @@
     height: 40px;
     border-radius: 20px;
     margin-left: 80px;
+}
+.link_button{
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    background-color: #c50829 ;
+    font-weight: bold;
 }

@@ -11,6 +11,7 @@ import BoardForm from "./components/BoardForm/Boardform";
 import PinForm from "./components/PinForm/PinForm";
 import BoardPage from "./pages/boardPage";
 import LoginPage from "./pages/loginPage";
+import NewUserPage from "./pages/newUserPage"
 
 const App = () => {
   const [user, setUser] = useState({});
@@ -32,6 +33,9 @@ const App = () => {
           <Route path="/user">
             <UserProfilePage user={user} />
 
+          </Route>
+          <Route path="/newUser">
+            <NewUserPage/>
           </Route>
 
           <Route path="/boards">
