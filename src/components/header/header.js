@@ -15,8 +15,11 @@ const Header = ({ user }) => {
           <Button />
         </div>
       </div>
-     
+
       <div className="header_userInfo__container">
+        <div className="button_signIn_container">
+          <div className="button_sigIn">Sign In</div>
+        </div>
         <UserMenu />
       </div>
     </div>

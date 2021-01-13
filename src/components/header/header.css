@@ -12,9 +12,35 @@
 .button__container{
   margin-left: 82px;
 }
+.header_userInfo__container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-.header_userInfo__image {
-  width: 52px;
-  height: 52px;
-  border-radius: 100%;
+.button_signIn_container{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  cursor: pointer;
+  
+}
+.button_sigIn{
+  width: 45px;
+  height: 43px;
+  border-radius: 21.5px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  text-align:center;
+
+}
+.button_sigIn:hover{
+  background-color:#c50829;
+  color: white;
+  border-radius: 21.5px;
+  text-align: center;
 }

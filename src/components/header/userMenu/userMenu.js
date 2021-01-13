@@ -6,13 +6,16 @@ const UserMenu = ({ profile, updateProfile, myBoards, myPins, logOut }) => {
 
   return (
     <div className="useDropdown__container">
+      
       <div className="userDropdown_anchor" onClick={() => setShowDropDown(!showDropdown)}>
         <img
           src="https://thispersondoesnotexist.com/image"
           alt="user_image_menu"
           className="userAvatar_container"
         />
+       
       </div>
+
       {showDropdown && (
         <div  className="userDropdown__dropdown">
             <div className="userDropdown__userfullName">{profile} Profile</div>
