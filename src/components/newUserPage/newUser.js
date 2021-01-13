@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const NewUser = ()=> {
     return(
         <div className="newUser_container">
-            <span className="form_newUser_title">We need your information</span>
+            <span className="form_newUser_title">Come on! Share your information</span>
             <form className="form_newUser_container">
                 <input type="text" placeholder="Your Name" className="newUser_input"/>
                 <input type="text" placeholder="Your Last Name"className="newUser_input"/>

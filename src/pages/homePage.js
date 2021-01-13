@@ -5,6 +5,7 @@ import UserCard from "../components/userCard/userCard";
 function HomePage({ user }) {
   return (
     <div className="app__body">
+      {/* UserCard se tiene que quitar... debe aparecer solo BoardList con todos los boards random*/}
       <UserCard
         avatar={user.avatar}
         userName={user.username}

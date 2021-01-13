@@ -6,6 +6,8 @@
     text-align: center;
     margin-top:50px;
     margin-bottom: 100px;
+    background-color: #c50829;
+    border-radius: 13px;
 }
 .form_newUser_title{
     width: 100%;
@@ -14,6 +16,8 @@
     margin-bottom: 20px;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospaces;
+    color: white;
+    font-weight: bold;
 }
 .form_newUser_container{
     width: 100%;
