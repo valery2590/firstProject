@@ -28,9 +28,19 @@
     background-color: white;
     border-radius: 13px;
     border: #bcbcbc 2px solid;
+    text-decoration:none;
 }
 .button_newUser_form:hover{
     background-color: #c50829;
     color: white;
-    
+    text-decoration:none;
+}
+.link_button_newUser{
+    text-decoration:none;
+    color: black;
+}
+.link_button_newUser:hover{
+    text-decoration:none;
+    color: white;
+    font-size: bold;
 }

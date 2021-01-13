@@ -1,4 +1,5 @@
 import "./newUser.css";
+import {Link} from "react-router-dom";
 
 const NewUser = ()=> {
     return(
@@ -13,7 +14,7 @@ const NewUser = ()=> {
                 <input type="email" placeholder="Confirm your Email"className="newUser_input"/>
                 <input type="password" placeholder="Create your Password"className="newUser_input"/>
                 <input type="password" placeholder="Confirm your Password"className="newUser_input"/>
-                <button type="submit" className="button_newUser_form">Create New User</button>
+                <button type="submit" className="button_newUser_form"><Link to="/user" className="link_button_newUser">Create New User</Link></button>
             </form>
         </div>
     )

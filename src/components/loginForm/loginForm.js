@@ -15,7 +15,7 @@ const LoginForm = () =>{
             </form>
             <div className="signUp_container"> 
                 <span className="title">No account, sign up!</span>
-                <button type="submit" onClick="" className="button_signUp"><Link to="/" className="link_button"> Sign up</Link> </button>
+                <button type="submit" onClick="" className="button_signUp"><Link to="/newUser" className="link_button"> Sign up</Link> </button>
             </div>
         </div>
 )}

@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/login">
             <LoginPage />
           </Route>
-
+        
           <Route path="/user">
             <UserProfilePage user={user} />
 
