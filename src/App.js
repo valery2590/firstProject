@@ -10,6 +10,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import BoardForm from "./components/BoardForm/Boardform";
 import PinForm from "./components/PinForm/PinForm";
 import BoardPage  from "./pages/boardPage";
+import LoginPage from "./pages/loginPage";
 
 const App =()=> {
   const [user, setUser] = useState({});
@@ -33,6 +34,9 @@ const App =()=> {
           <Route path="/pinform">
             <PinForm/>
           </Route>
+          <Route path="/login">
+          <LoginPage/>
+        </Route>
           <Route path="/user">
             <UserProfilePage user={user} />
           </Route>
