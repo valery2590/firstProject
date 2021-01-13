@@ -26,6 +26,7 @@
   font-size: 15px;
   line-height: 21px;
   cursor: pointer;
+  color: black;
   
 }
 .button_sigIn{
@@ -36,11 +37,13 @@
   display: flex;
   align-items: center;
   text-align:center;
-
+  text-decoration: none;
+  color: black;
 }
 .button_sigIn:hover{
   background-color:#c50829;
   color: white;
   border-radius: 21.5px;
   text-align: center;
+  text-decoration: none;
 }
