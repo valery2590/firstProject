@@ -1,11 +1,14 @@
+import { useEffect, useState } from "react";
 import "./BoardCard.css";
 
 const BoardCard = ({ board }) => {
-  
-    fetch (`http://localhost:3000/api/boards`)
+  const [boards, setBoards] = useState([]);
+  useEffect(() => {
+    fetch ("http://localhost:5000/api/Boards")
     .then (res => res.json())
+    .then (data => console.log(data));
+  },[]);
 
-  console.log(board);
   return (
     <div className="boardCard__container">
       <div className="boardCard_info__container">

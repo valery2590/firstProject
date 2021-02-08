@@ -8,7 +8,8 @@ const PinsList = () => {
   useEffect(() => {
     fetch("http://localhost:5000/api/Pins")
       .then((response) => response.json())
-      .then((json) => setPins(json));
+      .then((json) => setPins(json))
+      .then (data => console.log(data));
   }, []);
 
   return (
