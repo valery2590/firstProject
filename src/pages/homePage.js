@@ -1,38 +1,57 @@
 import "../App.css";
 import BoardList from "../components/boardList/boardList";
 import PinsList from "../components/pinList/PinsList";
-import { useEffect, useState } from "react";
+import  { React, useEffect, useState } from "react";
 
 function HomePage() {
-  const [image, setImage] = useState();
-  //  const images = async () => {
-  //   const res = await fetch(
-  //     "https://pixabay.com/api/?key=1732750-d45b5378879d1e877cd1d35a6&q=yellow+flowers"
-  //   );
-  //   const data = await res.json();
-  //   return data;
-  // };
-  // images ()
-  // .then((newImages) => {
-  //   setImage(newImages)
-  // })
+  const [formData, setFormData] = useState("Escribe tu busqueda")
+  const [respuesta, setRespuesta] = useState({results:[]});
+  const [res , setRes] = useState({results:[]})
+  const [response, setResponse] = useState({hits:[]});
+  
 
-  useEffect(async ()=> {
-    const response = await fetch("https://pixabay.com/api/?key=1732750-d45b5378879d1e877cd1d35a6&q")
+
+  const busqueda = (e)=>{
+    setFormData(e.target.value)
+  }
+
+
+  useEffect(async () => {
+    const response = await fetch(`https://pixabay.com/api/?key=1732750-d45b5378879d1e877cd1d35a6&q=  &per_page=200`);
     const data = await response.json();
-    const [item] = data.hits;
-    setImage(item);
-  }, [])
+    console.log(data);
+    setResponse(data);
+  }, []); 
+console.log(response);
+
+
+
+useEffect ( async () => {
+  const res =  await fetch (`https://rickandmortyapi.com/api/character`);
+  const data2 = await res.json();
+  console.log(data2);
+  setRes(data2)
+}, []);
 
   return (
     <div className="app__body">
+      <p>{formData}</p>
+      <input placeholder="select your option" onChange={busqueda}   />
       <div>
-        {image && <img src={image.hits}/>}
-        {image && <img src={image.webformatURL}/>}
-        <p>Welcome to Picturest</p>
-   
+        {setRespuesta}
       </div>
-      <button onClick="">Click</button>
+      <div>
+        {response.hits.map(datos => {
+          return <img  key={datos.id} src={datos.previewURL} />;
+        })}
+      </div>
+      <p>Welcome to Picturest 😄</p>
+      <div>
+        {res.results.map(datos2 =>{
+          return <img key ={datos2.id} src={datos2.image}/>;
+        })}
+      </div>
+      <button>Click</button>
       <BoardList />
       <PinsList />
     </div>
