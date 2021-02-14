@@ -7,7 +7,7 @@ function HomePage() {
   const [search, setSearch] = useState();
   const [response, setResponse] = useState({ hits: [] });
   const [isError, setIsError] = useState(false);
-  const [image, setImage] = useState({ hits: [] })
+  const [image, setImage] = useState({ hits: [] });
 
   const busqueda = (e) => {
     setFormData(e.target.value);
@@ -48,27 +48,34 @@ function HomePage() {
       {isError && <div>Something went wrong...</div>}
       <div className="images_container">
         {response.hits.map((datos) => {
-          return <div>
-            <div><img key={datos.id} src={datos.previewURL} target="_blank"/>
-            <p><a key={datos.id} className="link" href={datos.largeImageURL} target="_blank">View Image</a></p>
+          return (
+            <div className="picture_container">
+              <img key={datos.id} src={datos.previewURL} className="picture" />
+              <div>
+                <p>
+                  <a
+                    key={datos.id}
+                    className="link"
+                    href={datos.largeImageURL}
+                    target="_blank"
+                  >
+                    View Image
+                  </a>
+                </p>
+                <p>{datos.tags}</p>
+                <div className="userImage_container">
+                  <img
+                    key={datos.id}
+                    src={datos.userImageURL}
+                    className="userImage"
+                  />
+                  <p>{datos.user}</p>
+                </div>
+              </div>
             </div>
-            <p>{datos.tags}</p>
-            <div>
-              <img key={datos.id} src={datos.userImageURL}className="userImage"/>
-              <p>{datos.user}</p></div>
-            </div>
-          })} 
-        
-      
-          </div>
-          
-
-
-
-         
-   
-     
-      
+          );
+        })}
+      </div>
     </div>
   );
 }
