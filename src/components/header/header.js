@@ -13,7 +13,7 @@ const Header = ({ user }) => {
       <div className="header__logo">
         <img src={Logo} alt="Picturest Logo" onClick={() => history.push("/")}/>
         <div className="button__container" onClick={() => history.push("/")}>
-          <Button />
+          <Button text="Home" />
         </div>
       </div>
 

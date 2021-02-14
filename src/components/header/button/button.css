@@ -11,11 +11,20 @@
 .button_home {
   width: 113px;
   height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   border-radius: 21.5px;
   text-align: center;
+
 }
 .button_home:hover {
+  width: 113px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color:#c50829;
   color: white;
   border-radius: 21.5px;
