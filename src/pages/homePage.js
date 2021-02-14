@@ -50,27 +50,26 @@ function HomePage() {
         {response.hits.map((datos) => {
           return (
             <div className="picture_container">
-              <img key={datos.id} src={datos.previewURL} className="picture" />
-              <div>
-                <p>
-                  <a
-                    key={datos.id}
-                    className="link"
-                    href={datos.largeImageURL}
-                    target="_blank"
-                  >
-                    View Image
-                  </a>
-                </p>
-                <p>{datos.tags}</p>
-                <div className="userImage_container">
-                  <img
-                    key={datos.id}
-                    src={datos.userImageURL}
-                    className="userImage"
-                  />
-                  <p>{datos.user}</p>
-                </div>
+              <a
+                key={datos.id}
+                className="link"
+                href={datos.largeImageURL}
+                target="_blank"
+              >
+                <img
+                  key={datos.id}
+                  src={datos.previewURL}
+                  className="picture"
+                />
+              </a>
+              <p>{datos.tags}</p>
+              <div className="userImage_container">
+                <img
+                  key={datos.id}
+                  src={datos.userImageURL}
+                  className="userImage"
+                />
+                <p>{datos.user}</p>
               </div>
             </div>
           );
