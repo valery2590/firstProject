@@ -7,7 +7,6 @@ function HomePage() {
   const [search, setSearch] = useState();
   const [response, setResponse] = useState({ hits: [] });
   const [isError, setIsError] = useState(false);
-  const [image, setImage] = useState({ hits: [] });
 
   const busqueda = (e) => {
     setFormData(e.target.value);
@@ -31,7 +30,7 @@ function HomePage() {
 
   return (
     <div className="home__container">
-      <p className="salute">Welcome to Picturest 😄</p>
+      <p className="salute">  Welcome to Picturest 😄</p>
       <input
         className="search_input"
         type="text"
@@ -46,6 +45,7 @@ function HomePage() {
         className="search_button"
       />
       {isError && <div>Something went wrong...</div>}
+
       <div className="images_container">
         {response.hits.map((datos) => {
           return (
@@ -61,6 +61,7 @@ function HomePage() {
                   src={datos.previewURL}
                   className="picture"
                 />
+              
               </a>
               <p>{datos.tags}</p>
               <div className="userImage_container">
@@ -71,6 +72,7 @@ function HomePage() {
                 />
                 <p>{datos.user}</p>
               </div>
+             
             </div>
           );
         })}
